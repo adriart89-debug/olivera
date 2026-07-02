@@ -67,7 +67,14 @@ body.t-grupo{--accent:#111820;--accent-ink:#ffffff;--accent-soft:#eef0ef}
 
 /* ---------- main nav ---------- */
 .stickhead{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 8px 22px -18px rgba(17,24,32,.4)}
-.nav{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nav{background:var(--accent);border-top:1px solid var(--line)}
+.nav .menu a{color:var(--accent-ink)}
+.nav .menu a:hover{opacity:.75}
+.nav .icobtn{color:var(--accent-ink)}
+.nav .search{background:rgba(0,0,0,.08);color:var(--accent-ink)}
+.nav .cart{color:var(--accent-ink)}
+.nav .cart .badge{background:var(--accent-ink);color:var(--accent)}
+body.t-grupo .nav .search{background:#1a232d;color:#fff}
 .nav .wrap{display:flex;align-items:center;gap:28px;height:58px}
 .menu{display:flex;gap:28px;font-family:var(--f-display);font-weight:500;font-size:15px}
 .menu a{padding:6px 0;position:relative;cursor:pointer;color:var(--ink)}
